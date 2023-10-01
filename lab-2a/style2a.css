@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(180deg, #cad3e6 50%,#263149 50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+p{
+    margin: 0;
+    font-size: 30px;
+    color: snow;}
+
+.icon{
+    height: 20px;
+}
+
+span{
+    font-weight: bold;
+    color:red
+}
+
+table{
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 20px;
+}
+.small-picture{
+    display: inline-block;
+    height: 150px;
+
+}
+
+.big-picture{
+    display: block;
+    height: 250px;
+}
+ 
+
