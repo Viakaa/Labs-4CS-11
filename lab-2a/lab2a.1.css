@@ -1,60 +1,67 @@
 body {
     background-color: #e5e5e5;  
-    margin: 0;
-    text-align: center;
+    margin: 0;  
    }
 
+.block{
+   
+}
 
-.image{
-    display: block;
-    margin: 0 auto;
+img{
+    flex-direction: column;
+    display: flex;
+    margin: auto;
     border-radius: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
-.image2{
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-.image3{
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-#text {
+
+.text {
     box-sizing: border-box;
     border-radius: 1rem;
     font-size: 18px;
-    width:25%;
+    width:420px;
     padding: 20px;
     padding-bottom: 30px;
     padding-left: 30px;
     text-align: left;
     background-color: rgb(211, 211, 211);
     position: relative;
+    bottom: 215px;
     left: 60%;
-    bottom: 190px;
+    
    }
+
+.text1{
+    box-sizing: border-box;
+    border-radius: 1rem;
+    font-size: 18px;
+    width:420px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    bottom: 215px;
+    left: 7%;
+}  
+
 .bottom-text {
     box-sizing: border-box;
     border-radius: 1rem;
     text-align: left;
     padding-bottom: 20px;
     color: #6b6b6b;
-    background-color: rgb(211, 211, 211);
+    width: 400px;
+    height: 100px;
 
 }
 
-.bottom-text2 {
+.button{
     box-sizing: border-box;
-
     width: 50%;
     border-radius: 1rem;
     text-align: center;
