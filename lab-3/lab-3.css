@@ -1,0 +1,120 @@
+body {
+    background-image: url("./images.3/FFTablet_1100x.progressive.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+   
+}
+
+.title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 10vw;
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.undertitle {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.undertitle img {
+    height: 13px;
+    width: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    box-sizing: border-box;
+}
+
+.navbar_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar_text p {
+    margin: 0px 20px;
+}
+
+.navbar_image img {
+    height: 50px;
+    width: auto;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 200px;
+    height: 50px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.down_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+.down_content_text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 30%;
+}
+
+.down_image{
+    display: flex;
+    align-items: flex-end;
+}
+
+.down_content img{
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 1200px) {
+    .navbar_image{
+        display: none;
+    }
+    .buttonDiv{
+        display: none;
+    }
+    .navbar{
+        justify-content: flex-end;
+    }
+    .title{
+        display: none;
+    }
+    .undertitle{
+        letter-spacing: 3px;
+        margin-top: 40px;
+    }
+    .down_content{
+        flex-direction: column;
+    }
+    .down_content_text{
+        width: 100%;
+        text-align: center;
+    }
+    .down_image{
+        align-items: center;
+        justify-content: center;
+        margin-top: 26%;
+    }
+}
