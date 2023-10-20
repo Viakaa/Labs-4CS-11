@@ -1,0 +1,547 @@
+:root {
+    --main-yellow: #e8b846
+   }
+   
+   body {
+    margin: 0;
+    background-color: #d9d9d9;
+   }
+   
+   * {
+    box-sizing: border-box;
+   }
+   
+   .container:nth-child(1) {
+    width:100%;
+    height: 80vh;
+    min-height: 700px;
+    background-image: url('./images/jhj-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 40px;
+   
+    >div {
+     width:70%;
+     height: 80%;
+     margin: auto;
+     color: whitesmoke;
+     display: flex;
+     justify-content: end;
+     .title,.description {
+      padding-top: 35px;
+     }
+   
+     .title {
+      width: 40%;
+      height: 100%;
+      font-size: 2.5em;
+      font-weight: bolder;
+      border-right: 10px solid var(--main-yellow);
+      border-radius: 3px;
+     }
+   
+     .description {
+      width: 40%;
+      height: 100%;
+   
+      font-size: 1.25em;
+      margin-left: 20px;
+   
+      >div:last-child {
+       background-color: var(--main-yellow);
+       color: black;
+       border-radius: 10px;
+       padding: 20px 10px;
+       width: 50%;
+       text-align: center;
+   
+       font-size: 1em;
+       font-weight: bolder;
+       text-transform: uppercase;
+   
+       margin-top: 80px;
+      }
+     }
+    }
+   }
+   
+   .container:nth-child(2) {
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9;
+   
+    display: flex;
+    justify-content: center;
+   
+    >.item {
+     width: 20%;
+     height: 100%;
+     margin: 0 5px;
+     border-radius: 5px;
+     background-color: whitesmoke;
+     position: relative;
+     top: -40px;
+     padding: 10px;
+
+     >div:first-child {
+      margin: auto;
+      width: 40%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: var(--main-yellow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -40px;
+   
+      >img {
+       width: 45%;
+      }
+     }
+   
+     >div:nth-child(2) {
+      width:100%;
+      font-size: 1.25em;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      text-align: center;
+     }
+   
+     >div:last-child {
+      width: 100%;
+      text-align: center;
+      color: rgba(82, 82, 82, 0.655)
+     }
+    }
+   }
+
+.container2{
+    background-color: var(--main-yellow);
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 40px 0;
+    z-index: -2;
+}
+
+.circle{
+    position: absolute;
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-color:rgb(224, 223, 223);
+    border-radius: 50%;
+    margin: 10px 0;
+    left: 60%;
+    top: 10%;
+    z-index: -1;
+}
+
+.circle-striped{
+    position: absolute;
+    width: 130px;
+    aspect-ratio: 1/1;
+    background: repeating-linear-gradient(
+        315deg,
+        #ffffff00,
+        #ffffff00 10px,
+        #ffffff 10px,
+        #ffffff 20px
+      );
+    border-radius: 50%; 
+    margin: 10px 0;
+    left: 15%;
+    top: 65%;
+    z-index: -1;
+}
+
+.pic{
+    background-image: url(./images/jhj-min.jpg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 350px;
+    width: 45%;
+    margin: 10% 20%;
+}
+
+.box-container {
+    position: absolute;
+    bottom: 45px;
+    width: 30%;
+    text-align: left;
+    margin-left: 50%;
+    background-color: whitesmoke ;
+    padding-left: 20px;    
+}
+.bigtext {
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 10px;
+    font-family: monospace;
+}
+
+.greytext {
+    font-size: 20px;
+    color: #7f7f7f;
+    padding: 0 10px 15px;
+}
+
+.learn {
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--main-yellow);
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.container3{
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    
+}
+
+.boxes{
+    margin-left: 15%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box{
+    display: inline-block;
+    background-color: whitesmoke;
+    
+}
+
+.box p{
+    color:#7f7f7f; 
+    font-size: 20px;
+    padding-left:15% ;
+}
+
+.orange-line{
+    background-color: var(--main-yellow);
+    width: 40px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.container4{
+    height: 215vh;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.box-container2{
+    left: 30%;
+    position: absolute;
+    padding: 10px;
+    width: 40%;
+    display: inline-block;
+    background-color: whitesmoke;
+    
+}
+
+.img1{
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    z-index: -1;
+    background-image: url(./images/fgfg.jpg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    height: 35%;
+    width: 30%;
+}
+
+.img2{
+    background-image: url(./images/bnnn.jpg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    height: 35%;
+    width: 45%;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.img3{
+    background-image: url(./images/305d8a9c-d477-44c2-a0db-9a5268a4fb99.jpg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    height: 30%;
+    width: 30%;
+    left: 25%;
+    top: 50%;
+    position: absolute;
+}
+
+.img4{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    background-image: url(./images/25fbaa49-cb8b-4a6a-bc41-29b4b053fd75.jpeg);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    height: 35%;
+    width: 30%;
+}
+
+.text {
+    padding-top: 3%;
+    height:12%;
+    position: absolute;
+    width: 30%;
+    margin-top: 85%;
+    margin-left: 10%;
+    padding-left: 10px;
+    border-left: 5px solid rgb(61, 61, 61);
+    border-radius: 2px;
+}
+
+.container5{
+    background-color: var(--main-yellow);
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 40px 0;
+    z-index: -2;
+    height:100vh;
+}
+
+.box-container3{
+    position: relative;
+    top: 40px;
+    left: 50%;
+    padding:0 10px ;
+    width: 30%;
+    display: inline-block;
+    background-color: whitesmoke;
+    
+}
+
+.main-img{
+    background-image: url(./images/pillow-with-lemons-yellow-armchair-interior-room_169016-16555.webp);
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    width: 35%;
+    position: relative;
+    left: 20%;
+    bottom: 70%;
+}
+
+.grey-circle{
+    position: absolute;
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-color:rgb(224, 223, 223);
+    border-radius: 50%;
+    margin: 10px 0;
+    left: 73%;
+    top: 3%;
+    z-index: -1;
+}
+
+.striped-circle{
+    position: absolute;
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: repeating-linear-gradient(
+        315deg,
+        #ffffff00,
+        #ffffff00 10px,
+        #ffffff 10px,
+        #ffffff 20px
+      );
+    border-radius: 50%; 
+    margin: 10px 0;
+    left: 15%;
+    top: 70%;
+    z-index: -1;
+}
+
+.square{
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    background-color:rgb(224, 223, 223);
+    margin: 10px 0;
+    z-index: -2;
+    top: 50%;
+    left: 47%;
+}
+
+.container6{
+    height: 200vh;
+    width: 100%;
+    margin: auto;
+    padding: 5% 0;
+    position: relative;
+}
+
+.box-container4{
+    left: 25%;
+    top: 38%;
+    position: relative;
+    padding:0 10px ;
+    width: 30%;
+    display: inline-block;
+    background-color: whitesmoke;
+}
+
+.pic1{
+    top: 10%;
+    left: 15%;
+    background-image: url(./images/gfgf.jpg);
+    position: absolute;
+    aspect-ratio: 1/1;
+    background-position: bottom;
+    background-size: cover;
+    height: 20%;
+    width: 40%;
+}
+
+.pic2{
+    top: 20%;
+    left: 45%;
+    background-image: url(./images/gggg.jpg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background-position: bottom;
+    background-size: cover;
+    height: 25%;
+    width: 40%;
+}
+
+.pic3{
+    left: 15%;
+    top: 55%;
+    background-image: url(./images//fggg-min.jpg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    height: 20%;
+    width: 35%;
+}
+
+.pic4{
+    left: 60%;
+    top: 55%;
+    background-image: url(./images/ffff.jpg);
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: 1/1;
+    background-position: bottom;
+    background-size: cover;
+    height: 30%;
+    width: 20%;
+}
+
+.container7{
+    height: 75vh;
+    background-color: var(--main-yellow);
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.last-container img{
+    width: 50px;
+}
+
+.last-container{
+    position: absolute;
+    text-align: center;
+    font-family: monospace;
+    width: 30%;
+    padding: 20px;
+    color: white;
+    margin: 0 10px;
+    left: 20%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    z-index: 1  ;
+}
+
+.last-container div{
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(52, 52, 52);
+}
+
+.last-container h2{
+    text-transform: uppercase;
+}
+
+span{
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover {
+     color:var(--main-yellow);
+     text-decoration: underline;
+}
+}
+
+.input-container{
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    padding:20px 0 30px;
+    width: 35%;
+    height: 370px;  
+    display: inline-block;
+    background-color: white;
+}
+
+.input-container h1{
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.inputs {
+    outline: none;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:rgb(224, 223, 223);
+    border: none;
+}
+
+button{
+    margin: 10px;
+    width: 70%;
+    padding: 10px;
+    background-color: var(--main-yellow);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
