@@ -1,10 +1,61 @@
 body {
+    width: 100%;
     background-color: #e5e5e5;  
     margin: 0;  
    }
 
-.block{
+
+.text {
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 18px;
+    width:420px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(211, 211, 211);
+    position: absolute;
+    top: 3%;
+    left: 60%;
+    
+   }
+
+.text1{
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 18px;
+    width:420px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(211, 211, 211);
+    position: absolute;
+    top: 65%;
+    left: 60%;
+}  
+
+.text2{   
+    left: 8%;
+    top: 35%; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 18px;
+    width:420px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: left;
+    background-color: rgb(211, 211, 211);
+    position: absolute;
    
+}
+
+.block{   
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 40px;
 }
 
 img{
@@ -12,60 +63,22 @@ img{
     display: flex;
     margin: auto;
     border-radius: 50%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 150px;
+    aspect-ratio: 1/1;
     width: 150px;
 }
 
-.text {
-    box-sizing: border-box;
-    border-radius: 1rem;
-    font-size: 18px;
-    width:420px;
-    padding: 20px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    text-align: left;
-    background-color: rgb(211, 211, 211);
-    position: relative;
-    bottom: 215px;
-    left: 60%;
-    
-   }
-
-.text1{
-    box-sizing: border-box;
-    border-radius: 1rem;
-    font-size: 18px;
-    width:420px;
-    padding: 20px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    text-align: left;
-    background-color: rgb(211, 211, 211);
-    position: relative;
-    bottom: 215px;
-    left: 7%;
-}  
-
 .bottom-text {
     box-sizing: border-box;
-    border-radius: 1rem;
     text-align: left;
-    padding-bottom: 20px;
     color: #6b6b6b;
-    width: 400px;
-    height: 100px;
-
 }
 
 .button{
     box-sizing: border-box;
-    width: 50%;
-    border-radius: 1rem;
+    width: 60%;
+    border-radius: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 3px;
     background-color: rgb(104, 209, 90);
 }
 
