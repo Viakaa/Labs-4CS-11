@@ -14,28 +14,26 @@ h1{
     box-sizing: border-box;
     border-radius: 20px;
     width:25%;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: rgb(211, 211, 211);
     position: absolute;
 }
 
 .text {
-   
-    top: 3%;
+    top: 5%;
     left: 60%;
-    
    }
 
 .text1{
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 60%;
 }  
 
 .text2{   
     text-align: right;
     left: 15%;
-    top: 35%; 
+    top: 40%; 
     position: absolute;
 }
 
