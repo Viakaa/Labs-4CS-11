@@ -3,7 +3,12 @@ body{
     text-align: center;
     background: linear-gradient(180deg, #263149 50%, #cad3e6 50%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+}
+
+.container{
+    width: 45%;
+    height: 100vh;
+    margin: auto;
 }
 
 .title{
@@ -21,63 +26,75 @@ span{
     color:red
 }
 
-
 .everything{
     display: flex;
-    height: 467px;
-    margin: 9px 100px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-.small-picture{
-    display: inline-block;
-    height: 150px;
-    width: 145px;   
-    padding: 5px;
-   
+    column-gap: 10px;
 }
 
-.big-picture{
-    display: block;
-    height: 250px;
-    padding: 5px;
-    width: 305px;
-   
+
+.row{
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.small-container{
+    column-gap: 10px;
+    display: flex;
+}
+
+#big-pic{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1/1;
+}
+
+.big-picture1{
+    background-image: url(./images/dolomite-alpas.jpg);
+}
+
+.big-picture2{
+    background-image: url(./images/new-zeland.jpg);
+}
+
+#small-pic{
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1/1;
+}
+
+.small-picture3{
+    background-image: url(./images/iceland.jpg);
+}
+
+.small-picture4{
+    background-image: url(./images/ethiopia.jpg);
 }
  
-.big-text{
-    display: block;
-    padding: 5px;
-    width: 305px;
-    text-align: center;
-    margin: -150px 0;
-    font-size: 30px;
-    color: snow;
-    position: absolute;
-    font-family: monospace;
+.small-picture1{
+    background-image: url(./images/nepal.jpg);
 }
 
-.small-text{
-    padding: 5px;
-    width: 305px;
-    display:inline-block;
-    margin: 65px -235px;
-    font-size: 20px;
-    color: snow;
-    font-family: monospace;   
-    position: absolute;
-   
+.small-picture2{
+    background-image: url(./images/kenia.jpg);
+}
+
+#small-pic, #big-pic {
+    font-family: monospace; 
+    font-size: 20px;  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer {
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5%;
 }
 
 

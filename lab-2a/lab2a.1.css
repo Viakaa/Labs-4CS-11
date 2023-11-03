@@ -4,49 +4,38 @@ body {
     margin: 0;  
    }
 
+h1{
+    text-transform: capitalize;
+    font-size: 20px;
+}
 
-.text {
+#text{
+    font-family:monospace;
     box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 18px;
-    width:420px;
+    border-radius: 20px;
+    width:25%;
     padding: 20px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    text-align: left;
     background-color: rgb(211, 211, 211);
     position: absolute;
+}
+
+.text {
+   
     top: 3%;
     left: 60%;
     
    }
 
 .text1{
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 18px;
-    width:420px;
-    padding: 20px;
-    padding-left: 30px;
-    text-align: left;
-    background-color: rgb(211, 211, 211);
     position: absolute;
     top: 65%;
     left: 60%;
 }  
 
 .text2{   
-    left: 8%;
+    text-align: right;
+    left: 15%;
     top: 35%; 
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 18px;
-    width:420px;
-    padding: 20px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    text-align: left;
-    background-color: rgb(211, 211, 211);
     position: absolute;
 }
 
@@ -66,19 +55,19 @@ img{
     width: 150px;
 }
 
-.bottom-text {
-    box-sizing: border-box;
-    text-align: left;
-    color: #6b6b6b;
+.random{
+    color: gray;
 }
 
-.button{
-    box-sizing: border-box;
-    width: 60%;
-    border-radius: 10px;
+.read-me{
+    font-weight: bold;
     text-align: center;
-    padding: 3px;
-    background-color: rgb(104, 209, 90);
+    font-size: 15px;
+    border-radius:10px;
+    padding: 10px;
+    background-color:palegreen;
+    margin-left: 50%;
 }
+    
 
 
