@@ -58,7 +58,7 @@ function calculateTriangleArea(calculatorId) {
     document.getElementById('result_anagram').textContent = result;
   }
   
-  function findFibonacciNumber() {
+  function checkFibonacciNumber() {
     const index = parseInt(document.getElementById('number_fibonacci-order').value);
     let a = 1,
       b = 1;
