@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lab-5b.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div id="result">
+        <div id="heron-formule" class="calculator">
+          <label for="side1_heron-formule">Put in first side:</label>
+          <input type="number" id="side1_heron-formule" />
+          <br />
+          <label for="side2_heron-formule">Put in second side:</label>
+          <input type="number" id="side2_heron-formule" />
+          <br />
+          <label for="side3_heron-formule">Put in third side:</label>
+          <input type="number" id="side3_heron-formule" />
+          <br />
+          <button onclick="calculateTriangleArea('heron-formule')">
+            Result
+          </button>
+          <p id="result_heron-formule"></p>
+        </div>
+        <div id="area-angle" class="calculator">
+          <label for="side1_triangle2">Put in first side:</label>
+          <input type="number" id="side1_area-angle" />
+          <br />
+          <label for="side2_area-angle">Put in second side:</label>
+          <input type="number" id="side2_area-angle" />
+          <br />
+          <label for="angle_area-angle">Put in angle:</label>
+          <input type="number" id="angle_area-angle" />
+          <br />
+          <button onclick="calculateTriangleAreaBySidesAndAngle('area-angle')">
+            Result
+          </button>
+          <p id="result_area-angle"></p>
+        </div>
+        <div id="area-height" class="calculator">
+          <label for="side_area-height">Put in side:</label>
+          <input type="number" id="side_area-height" />
+          <br />
+          <label for="height_area-height">Put in height:</label>
+          <input type="number" id="height_area-height" />
+          <br />
+          <button onclick="calculateTriangleAreaBySideAndHeight('area-height')">
+            Result
+          </button>
+          <p id="result_area-height"></p>
+        </div>
+        <div id="area-radius" class="calculator">
+          <label for="side1_area-radius">Put in first side:</label>
+          <input type="number" id="side1_area-radius" />
+          <br />
+          <label for="side2_area-radius">Put in second side:</label>
+          <input type="number" id="side2_area-radius" />
+          <br />
+          <label for="side3_area-radius">Put in third:</label>
+          <input type="number" id="side3_area-radius" />
+          <br />
+          <label for="radius_area-radius">Put in radius:</label>
+          <input type="number" id="radius_area-radius" />
+          <br />
+          <button onclick="calculateTriangleArea('area-radius')">Result</button>
+          <p id="result_area-radius"></p>
+        </div>
+        <div id="palindrome" class="calculator">
+          <label for="number_palindrome">Put in a Number:</label>
+          <input type="number" id="number_palindrome" />
+          <br />
+          <button onclick="checkPalindrome()">Check</button>
+          <p id="result_palindrome"></p>
+        </div>
+        <div id="anagram" class="calculator">
+          <label for="word1_anagram">Put in the first word:</label>
+          <input type="text" id="word1_anagram" />
+          <br />
+          <label for="word2_anagram">Put in the second word:</label>
+          <input type="text" id="word2_anagram" />
+          <br />
+          <button onclick="checkAnagram()">Check</button>
+          <p id="result_anagram"></p>
+        </div>
+        <div id="fibonacci-order" class="calculator">
+          <label for="number_fibonacci-order"
+            >Put in the fibonacci sequence index:</label
+          >
+          <input type="number" id="number_fibonacci-order" />
+          <br />
+          <button onclick="findFibonacciNumber()">Check</button>
+          <p id="result_fibonacci-order"></p>
+        </div>
+        <div id="fibonacci-belong" class="calculator">
+          <label for="number_fibonacci-belong">Put in a number:</label>
+          <input type="number" id="number_fibonacci-belong" />
+          <br />
+          <button onclick="checkFibonacci()">Check</button>
+          <p id="result_fibonacci-belong"></p>
+        </div>
+      </div>
+      <div id="button-container">
+        <div class="row">
+          <button onclick="showCalculator('heron-formule')">
+            Heron Formule
+          </button>
+          <button onclick="showCalculator('area-angle')">
+            Triangle Area by sides and angle
+          </button>
+          <button onclick="showCalculator('area-height')">
+            Triangle Area by sides and height
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="showCalculator('area-radius')">
+            Triangle area by sides and radius
+          </button>
+          <button onclick="showCalculator('palindrome')">Palindrome</button>
+          <button onclick="showCalculator('anagram')">Anagram</button>
+        </div>
+        <div class="row">
+          <button onclick="showCalculator('fibonacci-order')">
+            Number of Fibonacci Order
+          </button>
+          <button onclick="showCalculator('fibonacci-belong')">
+            Does number belongs to Fibonacci order
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./lab-5b.js"></script>
+  </body>
+</html>
