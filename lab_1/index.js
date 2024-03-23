@@ -125,7 +125,6 @@ app.get('/orders/lowest', authorizationMiddleware, (req, res)  => {
   }, orders[0]);
 
   return res.status(200).send(lowestPriceOrder);
-
 })
 
 app.get('/orders/biggest', authorizationMiddleware, (req, res)  => {

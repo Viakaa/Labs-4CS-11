@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "firstName-3",
+    "lastName": "lastName-5",
+    "login": "login-5",
+    "password": "password-5",
+    "token": "161a1e5e-3d1a-46fb-8929-3f6d16054067"
+  },
+  {
+    "firstName": "firstName-3",
+    "lastName": "lastName-5",
+    "login": "login-7",
+    "password": "password-5",
+    "token": "976b734b-7abe-4277-afe5-dd20fd2d7adc"
+  },
+  {
+    "firstName": "firstName-3",
+    "lastName": "lastName-5",
+    "login": "login-0",
+    "password": "password-9",
+    "role": "Customer",
+    "token": "1d151676-f933-4a39-abbb-20fa98d9f4c1"
+  },
+  {
+    "login": "login-10",
+    "password": "password-19",
+    "role": "Admin",
+    "token": "1d4d404f-aadc-4ee3-89ad-6eb085ce1085"
+  },
+  {
+    "login": "login-19",
+    "password": "password-11",
+    "role": "Admin"
+  },
+  {
+    "login": "login-12",
+    "password": "password-1",
+    "role": "Driver",
+    "token": "ae20a0cd-529f-4cb0-845e-c686d95d2b11"
+  }
+]
