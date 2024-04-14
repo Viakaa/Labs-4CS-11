@@ -207,7 +207,7 @@ OrdersRouter.get('/orders', authorizationMiddleware,
     if (!['Active', 'In progress'].includes(order.status)) {
       return res.status(400).send({ message: `Order status can't be changed` });
     }
-
+    
     if (order.status=== 'Active' && body.status !== 'In progress') {
       return res.status(400).send({ message: `Order status can't be changed` });
       
