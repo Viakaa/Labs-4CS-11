@@ -5,7 +5,7 @@ import {
   GetOrdersSearchItemsCountNegativeError
 } from './orders';
 import { expect } from '@jest/globals';
-import { GetOrdersSearchTotalPriceFormatError } from './shared/orders.models';
+import { GetOrdersSearchQueryError, GetOrdersSearchTotalPriceArgIsNegativeError, GetOrdersSearchTotalPriceFormatError } from './shared/orders.models';
 
 
     describe('getTotalPrice function', () => {
@@ -34,6 +34,17 @@ import { GetOrdersSearchTotalPriceFormatError } from './shared/orders.models';
 
 
     describe('getOrdersByQuery function', () => {
+
+      it('should throw GetOrdersSearchQueryError if search parameter is less than 3 characters long', () => {
+        const query = { search: 'ab' };
+        expect(() => getOrdersByQuery(query)).toThrow(GetOrdersSearchQueryError);
+      });
+
+      it('should throw GetOrdersSearchTotalPriceArgIsNegativeError if totalPrice eq is negative', () => {
+        const query = { totalPrice: { eq: -1, gt: 0, lt: 0 } };
+        expect(() => getOrdersByQuery(query)).toThrow(GetOrdersSearchTotalPriceArgIsNegativeError);
+      });
+      
       it('should throw GetOrdersSearchNoConditionError if no conditions are provided', () => {
         const query = {};
         expect(() => getOrdersByQuery(query)).toThrow(GetOrdersSearchNoConditionError);
@@ -44,6 +55,11 @@ import { GetOrdersSearchTotalPriceFormatError } from './shared/orders.models';
         expect(() => getOrdersByQuery(query)).toThrow(GetOrdersSearchItemsCountNegativeError);
       });
 
+
+      it('should throw GetOrdersSearchTotalPriceFormatError if totalPrice has wrong format', () => {
+        const query = { totalPrice: { eq: 100, gt: 50, lt: 150 } };
+        expect(() => getOrdersByQuery(query)).toThrow(GetOrdersSearchTotalPriceFormatError);
+      });
 
       it('should throw GetOrdersSearchTotalPriceFormatError if totalPrice has wrong format', () => {
         const query = { totalPrice: { eq: 100, gt: 50, lt: 150 } };
