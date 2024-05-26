@@ -1,4 +1,4 @@
-import { Injectable, BadRequestException } from '@nestjs/common';
+import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { PartAccessTokenDoc, Parts, PartsDoc } from '../schema';
@@ -86,5 +86,13 @@ export class PartsService {
       console.error(`Failed to generate part: ${err.message}`);
       throw new BadRequestException('Failed to generate part from provided link');
     }
+  }
+
+  async verifyOtpAndDelete(partId: string, otp: string): Promise<void> {
+    const accessToken = await this.partAccessTokenModel.findOne({ partId, key: otp }).exec();
+    if (!accessToken) {
+      throw new NotFoundException('Invalid OTP or Part ID');
+    }
+    await this.partAccessTokenModel.deleteOne({ _id: accessToken._id }).exec();
   }
 }

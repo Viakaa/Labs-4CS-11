@@ -1,0 +1,51 @@
+.account-popup {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    border-radius: 2rem;
+  }
+  
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px ;
+    text-align: left;
+  }
+  
+  .exp-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin: 10px 0;
+  }
+  
+  .exp-bar-fill {
+    height: 100%;
+    background-color: #7ba86b;
+    border-radius: 2rem;
+    padding-left: 20px;
+  }
+  
+  .logout-button {
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 100px;
+    font-size: 15px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .account-details {
+    color: black;
+  }

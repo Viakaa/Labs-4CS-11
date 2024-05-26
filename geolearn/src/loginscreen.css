@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url('./images/background-overlay.jpg');
+}
+.signup-form {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #ededed;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 80%; 
+}
+
+.signup-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-form .button-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.signup-form button {
+    width: 48%;
+    padding: 10px;
+    background: #7ba86b;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 110px;
+}
+
+.signup-form button:hover {
+    background: #abe099;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.geo {
+    color: #7ba86b; 
+}
+
+.learn {
+    color: rgb(0, 0, 0);
+}
